@@ -13,12 +13,8 @@
     </PropertyGroup>
     
     <ItemGroup>
+        <PackageReference Include="VentFramework" Version="1.2.1.20" />
         <Reference Include="$(AmongUsDirectory)\BepInEx\plugins\TOHTOR.dll" />
-
-        <Reference Include="../VentFramework/bin/Debug/net6.0/VentFramework.dll">
-            <IncludeAssets>runtime; compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-            <PrivateAssets>all</PrivateAssets>
-        </Reference>
         
         <PackageReference Include="AmongUs.GameLibs.Steam" Version="2023.3.28" />
         <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.668" PrivateAssets="all" />
