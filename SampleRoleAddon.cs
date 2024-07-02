@@ -1,18 +1,20 @@
 using SampleRoleAddon.Roles;
-using TOHTOR.Addons;
+using Lotus.Addons;
+using VentLib.Version;
+using Lotus.GameModes.Standard;
 
 namespace SampleRoleAddon;
 
-public class SampleRoleAddon: TOHAddon
+public class SampleRoleAddon: LotusAddon
 {
     public override void Initialize()
     {
-        RegisterRole(new CrewCrew());
+        StandardRoles.AddRole(new CrewCrew());
     }
 
-    public override string AddonName() => "Sample Role Addon";
+    public override string Name { get;} = "Sample Role Addon";
 
-    public override string AddonVersion() => "1.2.3";
+    public override Version Version { get;} = new SampleLotusAddonVersion();
 }
 
 
