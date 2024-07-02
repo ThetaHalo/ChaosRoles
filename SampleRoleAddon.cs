@@ -1,7 +1,7 @@
 using SampleRoleAddon.Roles;
 using Lotus.Addons;
-using VentLib.Version;
 using Lotus.GameModes.Standard;
+using SampleRoleAddon.Version;
 
 namespace SampleRoleAddon;
 
@@ -14,7 +14,7 @@ public class SampleRoleAddon: LotusAddon
 
     public override string Name { get;} = "Sample Role Addon";
 
-    public override Version Version { get;} = new SampleLotusAddonVersion();
+    public override VentLib.Version.Version Version { get;} = new SampleLotusAddonVersion();
 }
 
 

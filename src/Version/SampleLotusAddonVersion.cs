@@ -1,14 +1,15 @@
 using Hazel;
+using VentLib.Version;
 
-namespace VentLib.Version;
+namespace SampleRoleAddon.Version;
 
 
 /// <summary>
 /// Version Representing this Addon
 /// </summary>
-public class SampleLotusAddonVersion: Version
+public class SampleLotusAddonVersion: VentLib.Version.Version
 {
-    public override Version Read(MessageReader reader)
+    public override VentLib.Version.Version Read(MessageReader reader)
     {
         return new SampleLotusAddonVersion();
     }
