@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Version>1.2.5</Version>
+        <Version>1.0.0</Version>
         <TargetFramework>net6.0</TargetFramework>
         <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
         <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-        <RootNamespace>SampleRoleAddon</RootNamespace>
+        <RootNamespace>ChaosRoles</RootNamespace>
     </PropertyGroup>
     
     <PropertyGroup>
         <!-- Replace this with your Among Us Directory \/\/\/ -->
-        <AmongUsDirectory>D:\Games\AmongUs\steam\Lotus</AmongUsDirectory>
+        <AmongUsDirectory>C:\repos\AU\AU-Lotus</AmongUsDirectory>
     </PropertyGroup>
     
     <ItemGroup>

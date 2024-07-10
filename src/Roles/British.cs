@@ -18,12 +18,12 @@ using Lotus.GUI.Name.Impl;
 using System;
 using System.Reflection;
 
-namespace SampleRoleAddon.Roles;
+namespace ChaosRoles.Roles;
 
 // The "Crew Crew" is a Crewmate role that does something.
 // If "Crew Crew" successfully reports enough players (determined by host) they win the game! It's that simple
-[Localized($"Roles.{nameof(CrewCrew)}")] // used for localization, not needed on files unless you utilize localization. You will have to go into the yaml file yourself and replace the default values.
-public class CrewCrew: Crewmate // There are a couple built-in role types you can extend from, crewmate is one of them.
+[Localized($"Roles.{nameof(British)}")] // used for localization, not needed on files unless you utilize localization. You will have to go into the yaml file yourself and replace the default values.
+public class British: Crewmate // There are a couple built-in role types you can extend from, crewmate is one of them.
 {
     [Localized("WarningMessage")]
     private static string _warningMessage = "The {0) is close to winning! Vote them out this meeting or lose!";
@@ -74,7 +74,7 @@ public class CrewCrew: Crewmate // There are a couple built-in role types you ca
     protected override Func<Sprite> GetRoleImage()
     {
         // Depending on your image size, you may have to change 500 to another number. If it is too big or too small keep changing it until it looks good for you.
-        return () => AssetLoader.LoadSprite("SampleRoleAddon.assets.crewcrew.png", 500, true);
+        return () => AssetLoader.LoadSprite("ChaosRoles.assets.crewcrew.png", 500, true);
     }
 
     private bool CheckWinCondition() => grabbedPlayers.Count >= reportedPlayersBeforeWin;
